@@ -19,7 +19,6 @@ describe("crisp-status-reporter", function() {
       assert.doesNotThrow(
         function() {
           new CrispStatusReporter({
-            url        : "http://localhost:8080",
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
             probe_id   : "relay",
             node_id    : "socket-client",
@@ -33,42 +32,10 @@ describe("crisp-status-reporter", function() {
       );
     });
 
-    it("should fail creating an instance with missing URL", function() {
-      assert.throws(
-        function() {
-          new CrispStatusReporter({
-            token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            probe_id   : "relay",
-            node_id    : "socket-client",
-            replica_id : "192.168.1.10"
-          });
-        },
-
-        "CrispStatusReporter should throw on missing URL"
-      );
-    });
-
-    it("should fail creating an instance with invalid URL", function() {
-      assert.throws(
-        function() {
-          new CrispStatusReporter({
-            url        : 0,
-            token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            probe_id   : "relay",
-            node_id    : "socket-client",
-            replica_id : "192.168.1.10"
-          });
-        },
-
-        "CrispStatusReporter should throw on invalid URL"
-      );
-    });
-
     it("should fail creating an instance with missing token", function() {
       assert.throws(
         function() {
           new CrispStatusReporter({
-            token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
             probe_id   : "relay",
             node_id    : "socket-client",
             replica_id : "192.168.1.10"
@@ -83,7 +50,6 @@ describe("crisp-status-reporter", function() {
       assert.throws(
         function() {
           new CrispStatusReporter({
-            url        : "http://localhost:8080",
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
             node_id    : "socket-client",
             replica_id : "192.168.1.10"
@@ -98,7 +64,6 @@ describe("crisp-status-reporter", function() {
       assert.throws(
         function() {
           new CrispStatusReporter({
-            url        : "http://localhost:8080",
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
             probe_id   : "relay",
             replica_id : "192.168.1.10"
@@ -114,10 +79,9 @@ describe("crisp-status-reporter", function() {
         assert.throws(
           function() {
             new CrispStatusReporter({
-              url        : "http://localhost:8080",
-              token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-              probe_id   : "relay",
-              node_id    : "socket-client"
+              token    : "REPLACE_THIS_WITH_A_SECRET_KEY",
+              probe_id : "relay",
+              node_id  : "socket-client"
             });
           },
 
@@ -132,7 +96,6 @@ describe("crisp-status-reporter", function() {
       this.timeout(20000)
 
       var crispStatusReporter = new CrispStatusReporter({
-        url        : "http://localhost:8080",
         token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
         probe_id   : "relay",
         node_id    : "socket-client",

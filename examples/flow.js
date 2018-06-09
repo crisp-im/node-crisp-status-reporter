@@ -18,7 +18,6 @@ var CrispStatusReporter  = require("../").CrispStatusReporter;
 console.info("Creating Crisp Status Reporter...");
 
 var crispStatusReporter = new CrispStatusReporter({
-  url        : "http://[::1]:8080",
   token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
   probe_id   : "relay",
   node_id    : "socket-client",
