@@ -19,8 +19,8 @@ console.info("Creating Crisp Status Reporter...");
 
 var crispStatusReporter = new CrispStatusReporter({
   token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-  probe_id   : "relay",
-  node_id    : "socket-client",
+  service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
+  node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab",
   replica_id : "192.168.1.10",
   interval   : 30,
   console    : console

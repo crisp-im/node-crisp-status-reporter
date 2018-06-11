@@ -20,8 +20,8 @@ describe("crisp-status-reporter", function() {
         function() {
           new CrispStatusReporter({
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            probe_id   : "relay",
-            node_id    : "socket-client",
+            service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
+            node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab",
             replica_id : "192.168.1.10",
             interval   : 30,
             console    : require("console")
@@ -36,8 +36,8 @@ describe("crisp-status-reporter", function() {
       assert.throws(
         function() {
           new CrispStatusReporter({
-            probe_id   : "relay",
-            node_id    : "socket-client",
+            service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
+            node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab",
             replica_id : "192.168.1.10"
           });
         },
@@ -46,17 +46,17 @@ describe("crisp-status-reporter", function() {
       );
     });
 
-    it("should fail creating an instance with missing probe_id", function() {
+    it("should fail creating an instance with missing service_id", function() {
       assert.throws(
         function() {
           new CrispStatusReporter({
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            node_id    : "socket-client",
+            node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab",
             replica_id : "192.168.1.10"
           });
         },
 
-        "CrispStatusReporter should throw on missing probe_id"
+        "CrispStatusReporter should throw on missing service_id"
       );
     });
 
@@ -65,7 +65,7 @@ describe("crisp-status-reporter", function() {
         function() {
           new CrispStatusReporter({
             token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            probe_id   : "relay",
+            service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
             replica_id : "192.168.1.10"
           });
         },
@@ -79,9 +79,9 @@ describe("crisp-status-reporter", function() {
         assert.throws(
           function() {
             new CrispStatusReporter({
-              token    : "REPLACE_THIS_WITH_A_SECRET_KEY",
-              probe_id : "relay",
-              node_id  : "socket-client"
+              token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
+              service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
+              node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab"
             });
           },
 
@@ -97,8 +97,8 @@ describe("crisp-status-reporter", function() {
 
       var crispStatusReporter = new CrispStatusReporter({
         token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-        probe_id   : "relay",
-        node_id    : "socket-client",
+        service_id : "d657b4c1-dd07-4f94-ac7a-d4c3b4b219c1",
+        node_id    : "5eca824b-4134-4126-982d-2c2338ecf3ab",
         replica_id : "192.168.1.10",
         console    : require("console")
       });

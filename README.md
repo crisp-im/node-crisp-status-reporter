@@ -22,9 +22,9 @@ Alternatively, you can run `npm install crisp-status-reporter --save`.
 var CrispStatusReporter = require("crisp-status-reporter").CrispStatusReporter;
 
 var crispStatusReporter = new CrispStatusReporter({
-  token      : "YOUR_TOKEN_SECRET",  // Your reporter token
-  probe_id   : "relay",              // Probe ID containing the parent Node for Replica
-  node_id    : "socket-client",      // Node ID containing Replica
+  token      : "YOUR_TOKEN_SECRET",  // Your reporter token (given by Crisp)
+  service_id : "YOUR_SERVICE_ID",    // Service ID containing the parent Node for Replica (given by Crisp)
+  node_id    : "YOUR_NODE_ID",       // Node ID containing Replica (given by Crisp)
   replica_id : "192.168.1.10",       // Unique Replica ID for instance (ie. your IP on the LAN)
   interval   : 30,                   // Reporting interval (in seconds; defaults to 30 seconds if not set)
   console    : require("console")    // Console instance if you need to debug issues
