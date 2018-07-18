@@ -50,3 +50,7 @@ You can easily add a push node for the application running this library on your 
 <p align="center">
   <img height="300" src="https://crisp-im.github.io/node-crisp-status-reporter/images/setup.gif" alt="How to add monitored node">
 </p>
+
+## Get more help
+
+You can find more help on our helpdesk article: [How to setup the Crisp Status Reporter library?](https://help.crisp.chat/en/article/how-to-setup-the-crisp-status-reporter-library-1koqk09/)
