@@ -53,4 +53,4 @@ You can easily add a push node for the application running this library on your 
 
 ## Get more help
 
-You can find more help on our helpdesk article: [How to setup the Crisp Status Reporter library?](https://help.crisp.chat/en/article/how-to-setup-the-crisp-status-reporter-library-1koqk09/)
+You can find more help on our helpdesk article: [How to setup the Crisp Status Reporter library?](https://help.crisp.chat/en/article/1koqk09/)
