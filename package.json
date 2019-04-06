@@ -1,7 +1,7 @@
 {
   "name": "crisp-status-reporter",
   "description": "Crisp Status Reporter for Node.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://github.com/crisp-im/node-crisp-status-reporter",
   "license": "MIT",
   "author": {
@@ -29,9 +29,6 @@
   "scripts": {
     "test": "check-build && istanbul cover _mocha",
     "coveralls": "istanbul cover _mocha --report lcovonly && cat ./coverage/lcov.info | coveralls"
-  },
-  "dependencies": {
-    "systeminformation": "3.33.18"
   },
   "devDependencies": {
     "check-build": "2.8.2",
