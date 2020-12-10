@@ -1,6 +1,6 @@
 # node-crisp-status-reporter
 
-[![Build Status](https://img.shields.io/travis/crisp-im/node-crisp-status-reporter/master.svg)](https://travis-ci.org/crisp-im/node-crisp-status-reporter) [![Test Coverage](https://img.shields.io/coveralls/crisp-im/node-crisp-status-reporter/master.svg)](https://coveralls.io/github/crisp-im/node-crisp-status-reporter?branch=master) [![NPM](https://img.shields.io/npm/v/crisp-status-reporter.svg)](https://www.npmjs.com/package/crisp-status-reporter) [![Downloads](https://img.shields.io/npm/dt/crisp-status-reporter.svg)](https://www.npmjs.com/package/crisp-status-reporter)
+[![Test and Build](https://github.com/crisp-im/node-crisp-status-reporter/workflows/Test%20and%20Build/badge.svg?branch=master)](https://github.com/crisp-im/node-crisp-status-reporter/actions?query=workflow%3A%22Test+and+Build%22) [![NPM](https://img.shields.io/npm/v/crisp-status-reporter.svg)](https://www.npmjs.com/package/crisp-status-reporter) [![Downloads](https://img.shields.io/npm/dt/crisp-status-reporter.svg)](https://www.npmjs.com/package/crisp-status-reporter)
 
 **Crisp Status Reporter for Node.**
 
