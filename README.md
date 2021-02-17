@@ -48,7 +48,7 @@ Your private token can be found on your [Crisp dashboard](https://app.crisp.chat
 You can easily add a push node for the application running this library on your Crisp dashboard. Add the node, and retrieve its `service_id` and `node_id` as follows:
 
 <p align="center">
-  <img height="300" src="https://crisp-im.github.io/node-crisp-status-reporter/images/setup.gif" alt="How to add monitored node">
+  <img width="605" src="https://crisp-im.github.io/node-crisp-status-reporter/images/setup.gif" alt="How to add monitored node">
 </p>
 
 ## Get more help
