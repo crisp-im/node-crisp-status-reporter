@@ -1,7 +1,7 @@
 /*
  * node-crisp-status-reporter
  *
- * Copyright 2018, Crisp IM SARL
+ * Copyright 2018, Crisp IM SAS
  * Author: Valerian Saliou <valerian@valeriansaliou.name>
  */
 
